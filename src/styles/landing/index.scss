@@ -287,6 +287,29 @@ html, body, section, footer {
 }
 
 #footer {
-    height: 60px;
+    padding: 20px 20px;
     background-color: #fff;
+    .copy {
+        opacity: 0.5;
+        font-size: 15px;
+        color: #393939;
+    }
+    .social {
+        color: #312d3b;
+        margin-bottom: 0px;
+        list-style: none;
+        li {
+            display: inline;
+        }
+        .social-icon {
+            color: #312d3b;
+            font-size: 25px;
+            padding: 0px 20px;
+            text-decoration: none;
+            &:hover {
+                color: #ffc600;
+                text-decoration: none;
+            }
+        }
+    }
 }
