@@ -10,7 +10,16 @@ var minifycss = require('gulp-minify-css');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-gulp.task('build', ['styles', 'scripts', 'images']);
+gulp.task('build', ['clean', 'styles', 'scripts', 'images', 'fonts'], function() {
+  return gulp.src('src/**/*')
+    .pipe(browserSync.reload({stream:true}))
+});
+
+gulp.task('fonts', function() {
+    return gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts/'))
+        .pipe($.size());
+});
 
 gulp.task('images', function() {
     return gulp.src('src/images/**/*')
@@ -78,8 +87,5 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('default', ['browser-sync'], function(){
-  gulp.watch("src/images/**/*", ['images']);
-  gulp.watch("src/styles/**/*.scss", ['styles']);
-  gulp.watch("src/scripts/**/*.js", ['scripts']);
-  gulp.watch("*.html", ['bs-reload']);
+  gulp.watch(["src/**/*"], ['styles', 'scripts', reload]);
 });
