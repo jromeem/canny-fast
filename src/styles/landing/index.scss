@@ -208,7 +208,8 @@ html, body, section, footer {
         padding: 0px 20px;
     }
     .subscribe-contain {
-        width: 620px;
+        max-width: 620px;
+        width: 90%;
         height: 60px;
         position: relative;
         margin: 0 auto;
@@ -227,7 +228,8 @@ html, body, section, footer {
             input {
                 border: none;
                 height: 60px;
-                width: 360px;
+                max-width: 390px;
+                width: 64%;
                 outline: none;
                 &:focus {
                     outline: none;
@@ -239,13 +241,14 @@ html, body, section, footer {
             right: 0px;
             top: 0px;
             cursor: pointer;
-            padding: 20px 60px;
+            padding: 20px 0px;
             text-transform: uppercase;
             font-size: 14px;
             letter-spacing: 3px;
             text-align: center;
             color: #ffffff;
-            width: 220px;
+            max-width: 220px;
+            width: 30%;
             margin: 0 auto;
             margin-bottom: 30px;
             height: 60px;
@@ -261,11 +264,23 @@ html, body, section, footer {
                 background-color: #fff;
             }
             &:active {
-                margin-top: 2px;
-                margin-bottom: 28px;
                 box-shadow: none;
                 -webkit-transition: 0.1s;
                 transition: 0.1s;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .subscribe-contain {
+            .subscribe-button {
+                letter-spacing: 2px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .subscribe-contain {
+            .subscribe-button {
+                letter-spacing: 1px;
             }
         }
     }
