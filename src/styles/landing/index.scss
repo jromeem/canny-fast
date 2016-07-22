@@ -118,10 +118,9 @@ html, body, section, footer {
 }
 
 #service-section {
-    height: 800px;
     background-color: #fff;
-
-    .service-title {
+    padding-bottom: 150px;
+    .title {
         margin-top: 100px;
         margin-bottom: 40px;
         font-size: 48px;
@@ -133,11 +132,74 @@ html, body, section, footer {
             color: #ffc600;
         }
     }
+    .subtitle {
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #312d3b;
+        margin-bottom: 80px;
+        padding: 0px 20px;
+    }
+    .service-row-contain {
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+        .service-contain {
+            width: 215px;
+            margin: 0px 50px;
+            padding: 0px;
+            .service-icon-contain {
+                width: 215px;
+                height: 215px;
+                border-radius: 100%;
+                background-size: 90px 90px;
+                background-color: #312d3b;
+                display: table-cell;
+                vertical-align: middle;
+                .service-icon {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .service-title {
+                font-size: 24px;
+                line-height: 1;
+                text-align: center;
+                color: #312d3b;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+            .service-desc {
+                font-size: 20px;
+                line-height: 1.2;
+                text-align: center;
+                color: #312d3b;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .service-row-contain {
+            .service-contain {
+                margin: 0px auto;
+                margin-bottom: 50px;
+            }
+        }
+    }
 }
 
 #signup-section {
     height: 800px;
     background-color: #f1f1f1;
+    padding: 100px 0px;
+    .title {
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 1;
+        text-align: center;
+        color: #312d3b;
+    }
 }
 
 #footer {
