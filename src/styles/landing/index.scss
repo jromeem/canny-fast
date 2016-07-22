@@ -1,3 +1,107 @@
-html, body {
+html, body, section, footer {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header-section {
+    // height: 100vh;
+    background-color: #ffc600;
+    .logo-contain {
+        padding-top: 27px;
+        padding-left: 27px;
+        img {
+            display: inline-block;
+        }
+        .logo-img {
+            width: 70px;
+            height: 70px;
+            background-image: url('/dist/images/canny-logo.png');
+            background-size: cover;
+            display: inline-block;
+        }
+        .logo-title {
+            margin-left: 10px;
+            display: inline-block;
+            // font-family: AvenirNext;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            text-align: center;
+            color: #2b2834;
+        }
+        &:hover {
+            cursor: pointer;
+            .logo-title {
+                color: #fff;
+            }
+        }
+    }
+    .menu-contain {
+        padding-top: 33px;
+        padding-right: 45px;
+        .menu-img {
+            width: 25px;
+            height: 15px;
+            background-image: url('/dist/images/icon-menu.svg');
+            background-size: cover;
+            &:hover {
+                background-image: url('/dist/images/icon-menu-white.svg');
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+    .title {
+        width: 55%;
+        max-width: 700px;
+        font-size: 48px;
+        color: #fff;
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        .black-color {
+            color: #2b2834;
+        }
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #312d3b;
+    }
+    .subscribe-button {
+        // padding: 20px 60px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #ffffff;
+        width: 220px;
+        margin: 0 auto;
+        height: 60px;
+        border-radius: 40px;
+        background-color: #312d3b;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+        // border-style: solid;
+        border-width: 2px;
+        border-image-source: linear-gradient(to bottom, #312d3b, #38373a);
+        border-image-slice: 1;
+    }
+}
+
+#service-section {
+    height: 800px;
+    background-color: #fff;
+}
+
+#signup-section {
+    height: 800px;
+    background-color: #f1f1f1;
+}
+
+#footer {
+    height: 60px;
     background-color: #fff;
 }
