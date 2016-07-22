@@ -90,8 +90,7 @@ html, body, section, footer {
         border-radius: 40px;
         background-color: #312d3b;
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-        // border-style: solid;
-        border-width: 2px;
+        border-width: 0px;
         border-image-source: linear-gradient(to bottom, #312d3b, #38373a);
         border-image-slice: 1;
         &:hover {
@@ -190,7 +189,6 @@ html, body, section, footer {
 }
 
 #signup-section {
-    height: 800px;
     background-color: #f1f1f1;
     padding: 100px 0px;
     .title {
@@ -199,6 +197,70 @@ html, body, section, footer {
         line-height: 1;
         text-align: center;
         color: #312d3b;
+        margin-bottom: 30px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #312d3b;
+        margin-bottom: 40px;
+        padding: 0px 20px;
+    }
+    .subscribe-contain {
+        width: 620px;
+        height: 60px;
+        position: relative;
+        margin: 0 auto;
+        background-color: none;
+        .subscribe-input {
+            height: 60px;
+            width: 100%;
+            padding-left: 50px;
+            font-size: 22px;
+            border-radius: 40px;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+            border-width: 0px;
+            border-image-source: linear-gradient(to bottom, #312d3b, #38373a);
+            border-image-slice: 1;
+            &:focus {
+                outline: none;
+            }
+        }
+        .subscribe-button {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            cursor: pointer;
+            padding: 20px 60px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-align: center;
+            color: #ffffff;
+            width: 220px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            height: 60px;
+            border-radius: 40px;
+            background-color: #ffc600;
+            color: #312d3b;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+            border-width: 0px;
+            border-image-source: linear-gradient(to bottom, #312d3b, #38373a);
+            border-image-slice: 1;
+            &:hover {
+                color: #312d3b;
+                background-color: #fff;
+            }
+            &:active {
+                margin-top: 2px;
+                margin-bottom: 28px;
+                box-shadow: none;
+                -webkit-transition: 0.1s;
+                transition: 0.1s;
+            }
+        }
     }
 }
 
